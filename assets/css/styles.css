@@ -1,0 +1,10 @@
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+.navbar {
+  color: #000;
+  font-size: 20px;
+  font-family: 'Crushed', cursive;
+}
