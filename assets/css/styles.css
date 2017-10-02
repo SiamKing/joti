@@ -5,11 +5,14 @@ html, body {
 }
 
 h1 {
-  color: #fff;
   margin-top: 0;
   font-weight: 300;
   text-align: center;
   font-size: 3em;
+}
+
+.joti {
+  color: #fff;
 }
 
 .navbar {
@@ -51,4 +54,11 @@ h1 {
 
 .borderright {
   border-right: 10px solid #000;
+}
+
+
+.img-circle {
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
 }
