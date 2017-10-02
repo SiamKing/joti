@@ -33,32 +33,42 @@ h1 {
   z-index: 1;
 }
 
-.clients-img {
-  height: 100%;
-  width: 500px;
+/*#clients {
+  margin: 20px;
+}*/
+
+.img-fluid {
+  border: solid black 1px;
 }
 
 .nopadding {
-   padding-left: 0 !important;
-   margin-left: 0 !important;
+  padding-left: 0 !important;
+  margin-left: 0 !important;
 }
 
-.paddingright {
-  margin-left: -20px;
-  overflow: hidden;
+.img-client {
+  max-height: 600px;
+  width: 100%;
 }
 
 .marginleft {
-  margin-left: 40px;
+  margin-left: 0;
 }
-
-.borderright {
-  border-right: 10px solid #000;
-}
-
 
 .img-circle {
   border-radius: 50%;
   width: 200px;
   height: 200px;
+  border: solid black 1px;
+}
+
+.team-section {
+  background-color: #d9d9d9;
+  border-radius: 5%;
+  border: solid black 1px;
+}
+
+.team {
+  padding: 20px;
+
 }
