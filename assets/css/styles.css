@@ -12,15 +12,23 @@ h1 {
   font-size: 3em;
 }
 
-.joti {
-  color: #fff;
-}
-
 .navbar {
+  margin-left: 50px;
   border:none !important;
   opacity: .8 !important;
   font-size: 20px;
-  font-family: 'Crushed', cursive;
+  font-family: "Muli";
+
+}
+
+.navbar > a {
+  color: white;
+  font-size: 30px;
+}
+
+.navbar-nav > a {
+  color: rgb(172, 248, 255);
+  margin: 0 10px 0 10px;
 }
 
 .jumbotron {
