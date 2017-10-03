@@ -182,7 +182,9 @@ a i {
 }
 
 .team-section {
-  background-color: #d9d9d9;
+  background-image: url('../images/ocean.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
   border-radius: 5%;
   border: solid black 1px;
 }
@@ -190,4 +192,14 @@ a i {
 .team {
   padding: 20px;
 
+}
+
+.team img {
+  float:left;
+  margin: 10px;
+}
+
+.team-text {
+  margin: 40px 10px 0 10px;
+  color: white;
 }
