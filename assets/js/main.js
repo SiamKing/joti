@@ -8,50 +8,57 @@ $(function() {
   var whatWeDo = $('#what-we-do');
 
   var offset = whatWeDo.offset();
-  console.log(offset.top)
-  offset.top -= 10;;
+
+  offset.top -= 10;
   if (whatWeDo.length){
-    $(document).scroll(function() {
+    $('html, body').scroll(function() {
       scroll_start = $(this).scrollTop();
       if(scroll_start > offset.top) {
-        console.log(this)
         $(".navbar-default").css({'background-color': '#fff', 'opacity': '1'});
-        $("nav a").css('color', 'black');
+        $(".nav-link").css('color', 'black');
       } else {
         $('.navbar-default').css({'background-color': 'transparent'});
-        $("nav a").css({'color': 'white', 'background-color': 'transparent'});
+        $(".nav-link").css({'color': 'white', 'background-color': 'transparent'});
       }
     });
   }
 
-  $(document).on("scroll", onScroll);
+  // $('html, body').on("scroll", onScroll);
 
-//   $(".navbar-nav a").click(function() {
-//     var anchor = $(this).find('a').attr('href')
-//
-//     $.scrollTo(anchor, 800)
-//     // remove classes from all
-//     $("navbar-nav a").removeClass("active");
-//     // add class to the one we clicked
-//     $(this).addClass("active");
-//     console.log(this)
-//   });
+  // $('a[href^="#"]').click(function(e) {
+  //   console.log(this.hash)
+  //   let hash = this.hash;
+  //   // Prevent the jump and the #hash from appearing on the address bar
+  //   e.preventDefault();
+  //   // Scroll the window, stop any previous animation, stop on user manual scroll
+  //   // Check https://github.com/flesler/jquery.scrollTo for more customizability
+  //   $('html, body').scrollTo(hash, {duration:1000});
+  // });
+
+  $(".nav-link").click(function(e) {
+    var anchor = $(this).attr('href')
+    $('html, body').scrollTo(this.hash, 1800)
+    // remove classes from all
+    $(".nav-link").removeClass("active");
+    // add class to the one we clicked
+    $(this).addClass("active");
+  });
 //
   $('.navbar-brand').click(function() {
-    $.scrollTo('#top', 800)
+    console.log('navbar-brand')
+    $('html, body').scrollTo('home', {duration: 1800})
   })
 });
 
 function onScroll(event){
   event.preventDefault();
     var scrollPos = $(document).scrollTop();
-    console.log(event)
-    $('navbar div').each(function (e) {
+    $('.nav-link').each(function (e) {
         var currLink = $(this);
-        var refElement = $(currLink.find('a').attr("href"));
+        var refElement = $(currLink.attr("href"));
 
         if (refElement.position().top <= scrollPos && refElement.position().top + refElement.height() + 200 > scrollPos) {
-            $('navbar div').removeClass("active");
+            $('nav-link').removeClass("active");
             currLink.addClass("active");
         }
         else{

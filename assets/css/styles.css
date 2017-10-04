@@ -20,8 +20,6 @@ h1 {
 
 .navbar > a {
   margin-left: 20px;
-  color: white;
-  font-size: 30px;
 }
 
 .navbar-nav > a {
@@ -30,8 +28,8 @@ h1 {
 }
 
 .joti-brand {
-  width: 50%;
-  height: 50%;
+  width: 40%;
+  height: 40%;
 }
 
 .jumbotron {
