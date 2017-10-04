@@ -78,12 +78,17 @@ a i {
 
 /*   WHAT WE DO   */
 #what-we-do {
-  height: 50vh;
+  height: auto;
+  min-height: 300px;
   margin-bottom: 50px;
 }
 
 .what-section {
-  margin: 20px;
+  margin: 30px 20px;
+}
+
+.pride-section {
+  margin-top: 60px;
 }
 
 /*   CLIENTS   */
