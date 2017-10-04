@@ -4,6 +4,7 @@
 // });
 
 $(function() {
+  // changing navbar from transparent to white when scrolling down past hero
   var scroll_start = 0;
   var whatWeDo = $('#what-we-do');
 
@@ -25,28 +26,7 @@ $(function() {
     });
   }
 
-  // $('html, body').on("scroll", onScroll);
-
-  // $('a[href^="#"]').click(function(e) {
-  //   console.log(this.hash)
-  //   let hash = this.hash;
-  //   // Prevent the jump and the #hash from appearing on the address bar
-  //   e.preventDefault();
-  //   // Scroll the window, stop any previous animation, stop on user manual scroll
-  //   // Check https://github.com/flesler/jquery.scrollTo for more customizability
-  //   $('html, body').scrollTo(hash, {duration:1000});
-  // });
-
-  // $(".nav-link").click(function(e) {
-  //   var anchor = $(this).attr('href');
-  //   $('html, body').scrollTo(anchor, 1800)
-  //   // remove classes from all
-  //   $(".nav-link").removeClass("active");
-  //   // add class to the one we clicked
-  //   $(this).addClass("active");
-  // });
-//
-
+  // smooth scrolling and add active class to clicked link
   $('a[href*="#"]')
   // Remove links that don't actually link to anything
   .not('[href="#"]')
@@ -61,8 +41,9 @@ $(function() {
       // Figure out element to scroll to
       var target = $(this.hash);
       target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+      // remove active class from nav links
       $('.nav-link').removeClass('active')
-      console.log(target)
+      // add active class to clicked link
       $(this).addClass('active')
       // Does a scroll target exist?
       if (target.length) {
@@ -85,25 +66,4 @@ $(function() {
       }
     }
   });
-  // $('.navbar-brand').click(function() {
-  //   console.log('navbar-brand')
-  //   $('body').scrollTo('#home', {duration: 1800})
-  // })
 });
-
-function onScroll(event){
-  event.preventDefault();
-    var scrollPos = $(document).scrollTop();
-    $('.nav-link').each(function (e) {
-        var currLink = $(this);
-        var refElement = $(currLink.attr("href"));
-
-        if (refElement.position().top <= scrollPos && refElement.position().top + refElement.height() + 200 > scrollPos) {
-            $('nav-link').removeClass("active");
-            currLink.addClass("active");
-        }
-        else{
-            currLink.removeClass("active");
-        }
-    });
-}
