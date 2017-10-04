@@ -1,5 +1,6 @@
 html, body {
-  height: 100%;
+  height: auto;
+  min-height: 100%;
   margin: 0;
   overflow-x: hidden;
   font-family: "Crushed";
@@ -10,6 +11,10 @@ h1 {
   font-weight: 300;
   text-align: center;
   font-size: 3em;
+}
+
+#home {
+  position: relative;
 }
 
 .navbar {
@@ -38,7 +43,7 @@ h1 {
 
 .jumbotron {
   background-image: url("../images/joti-hero.jpg");
-  height: 100%;
+  height: 100vh;
   width: 100%;
   overflow:hidden;
   background-repeat: no-repeat;
@@ -73,6 +78,10 @@ a i {
 
 
 /*   CLIENTS   */
+#clients {
+  position: relative;
+}
+
 .img-fluid {
   border: solid black 1px;
   margin: 20px 0 20px 0;
@@ -169,6 +178,7 @@ a i {
 
 /*   TEAM   */
 #our-team {
+  position: relative;
   margin: 100px 0 400px 0;
 }
 
@@ -200,4 +210,9 @@ a i {
   margin-top: 50px !important;
   color: white;
   overflow: hidden;
+}
+
+/*CONTACT*/
+#contact {
+  position: relative;
 }
