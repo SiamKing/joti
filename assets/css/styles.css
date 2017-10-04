@@ -19,6 +19,7 @@ h1 {
 }
 
 .navbar > a {
+  margin-left: 20px;
   color: white;
   font-size: 30px;
 }
@@ -26,6 +27,11 @@ h1 {
 .navbar-nav > a {
   color: rgb(172, 248, 255);
   margin: 0 10px 0 10px;
+}
+
+.joti-brand {
+  width: 50%;
+  height: 50%;
 }
 
 .jumbotron {
@@ -47,7 +53,7 @@ h1 {
   height: 85%;
 }
 
-.enlightened_development {
+/*.enlightened_development {
   font-size: 30px;
   font-weight: 100;
   font-family: "Muli";
@@ -55,7 +61,7 @@ h1 {
   line-height: 1.2;
   text-align: center;
   letter-spacing: 3px;
-}
+}*/
 
 a i {
   background-color: #FAE2AB !important;

@@ -26,18 +26,18 @@ $(function() {
 
   $(document).on("scroll", onScroll);
 
-  $("navbar-nav a").click(function() {
-    var anchor = $(this).find('a').attr('href')
-
-    $.scrollTo(anchor, 800)
-    // remove classes from all
-    $("navbar-nav a").removeClass("active");
-    // add class to the one we clicked
-    $(this).addClass("active");
-    console.log(this)
-  });
-
-  $('.brand').click(function() {
+//   $(".navbar-nav a").click(function() {
+//     var anchor = $(this).find('a').attr('href')
+//
+//     $.scrollTo(anchor, 800)
+//     // remove classes from all
+//     $("navbar-nav a").removeClass("active");
+//     // add class to the one we clicked
+//     $(this).addClass("active");
+//     console.log(this)
+//   });
+//
+  $('.navbar-brand').click(function() {
     $.scrollTo('#top', 800)
   })
 });
