@@ -13,12 +13,9 @@ h1 {
 }
 
 .navbar {
-  margin-left: 50px;
   border:none !important;
-  opacity: .8 !important;
   font-size: 20px;
   font-family: "Muli";
-
 }
 
 .navbar > a {
@@ -41,24 +38,13 @@ h1 {
   z-index: 1;
 }
 
-.joti-hero-text img {
-  width: 75%;
-  height: 75%;
-
+.joti-hero-text {
+  text-align: center;
 }
 
-.JOTI_SOFTWARE {
-  font-size: 30px;
-  font-weight: 900;
-  font-family: "Muli";
-  color: rgb(255, 255, 255);
-  line-height: 1.2;
-  text-align: center;
-  text-shadow: 0px 1px 8px rgba(1, 1, 1, 0.23);
-  -moz-transform: matrix( 1.88704577582133,0,0,1.88704577582133,0,0);
-  -webkit-transform: matrix( 1.88704577582133,0,0,1.88704577582133,0,0);
-  -ms-transform: matrix( 1.88704577582133,0,0,1.88704577582133,0,0);
-
+.joti-hero-text img {
+  width: 85%;
+  height: 85%;
 }
 
 .enlightened_development {
@@ -72,9 +58,9 @@ h1 {
 }
 
 a i {
-  background-color: rgb(172, 248, 255) !important;
+  background-color: #FAE2AB !important;
   border-radius: 50%;
-  color: white;
+  color: rgb(172, 248, 255);
 }
 
 
@@ -175,7 +161,7 @@ a i {
 
 /*   TEAM   */
 #our-team {
-  margin: 300px 0 400px 0;
+  margin: 100px 0 400px 0;
 }
 
 .img-circle {

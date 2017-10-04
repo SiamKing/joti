@@ -1,17 +1,20 @@
 // PRELOADER
-$(window).on('load', function(){
-  $('.preloader').fadeOut(1000); // set duration in brackets
-});
+// $(window).on('load', function(){
+//   $('.preloader').fadeOut(1000); // set duration in brackets
+// });
 
 $(function() {
   var scroll_start = 0;
-  var about = $('#about');
-  var offset = about.offset();
+  var whatWeDo = $('#what-we-do');
+
+  var offset = whatWeDo.offset();
+  console.log(offset.top)
   offset.top -= 10;;
-  if (about.length){
+  if (whatWeDo.length){
     $(document).scroll(function() {
       scroll_start = $(this).scrollTop();
       if(scroll_start > offset.top) {
+        console.log(this)
         $(".navbar-default").css({'background-color': '#fff', 'opacity': '1'});
         $("nav a").css('color', 'black');
       } else {
@@ -23,14 +26,15 @@ $(function() {
 
   $(document).on("scroll", onScroll);
 
-  $("ul.nav li").click(function() {
+  $("navbar-nav a").click(function() {
     var anchor = $(this).find('a').attr('href')
 
     $.scrollTo(anchor, 800)
     // remove classes from all
-    $("nav ul li").removeClass("active");
+    $("navbar-nav a").removeClass("active");
     // add class to the one we clicked
     $(this).addClass("active");
+    console.log(this)
   });
 
   $('.brand').click(function() {
@@ -41,12 +45,13 @@ $(function() {
 function onScroll(event){
   event.preventDefault();
     var scrollPos = $(document).scrollTop();
-    $('nav ul li').each(function (e) {
+    console.log(event)
+    $('navbar div').each(function (e) {
         var currLink = $(this);
         var refElement = $(currLink.find('a').attr("href"));
 
         if (refElement.position().top <= scrollPos && refElement.position().top + refElement.height() + 200 > scrollPos) {
-            $('nav ul li').removeClass("active");
+            $('navbar div').removeClass("active");
             currLink.addClass("active");
         }
         else{
