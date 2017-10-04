@@ -14,17 +14,21 @@ h1 {
 
 .navbar {
   border:none !important;
-  font-size: 20px;
+
   font-family: "Muli";
 }
 
-.navbar > a {
+.navbar-brand {
+  font-weight: 900;
+  font-size: 30px !important;
+  color: white;
   margin-left: 20px;
 }
 
 .navbar-nav > a {
   color: rgb(172, 248, 255);
   margin: 0 10px 0 10px;
+  font-size: 18px;
 }
 
 .joti-brand {
