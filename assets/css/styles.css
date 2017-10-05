@@ -19,15 +19,33 @@ h1 {
 
 .navbar {
   border:none !important;
-
   font-family: "Muli";
+}
+
+.navbar-default-before-scroll {
+  background-color: transparent;
+}
+
+.navlink-before-scroll {
+  background-color: transparent;
+  color: rgb(172, 248, 255);
+}
+
+.navbar-brand-before-scroll {
+  color: white;
+}
+
+.nav-after-scroll {
+  -webkit-box-shadow: 0 8px 6px -6px #999;
+  -moz-box-shadow: 0 8px 6px -6px #999;
+  box-shadow: 0 8px 6px -6px #999;
 }
 
 .navbar-brand {
   font-weight: 900;
   font-size: 30px !important;
   color: white;
-  margin-left: 20px;
+  margin-left: 40px;
 }
 
 .navbar-nav > a {
@@ -71,8 +89,7 @@ h1 {
 }*/
 
 a i {
-  background-color: #FAE2AB !important;
-  border-radius: 50%;
+  background-color: transparent !important;
   color: rgb(172, 248, 255);
 }
 
@@ -97,7 +114,6 @@ a i {
 }
 
 .img-fluid {
-  border: solid black 1px;
   margin: 20px 0 20px 0;
 }
 
