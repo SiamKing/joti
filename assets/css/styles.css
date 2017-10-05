@@ -251,7 +251,7 @@ a i {
 /*   TEAM   */
 #our-team {
   position: relative;
-  margin: 100px 0 400px 0;
+  margin: 100px 0 0 0;
 }
 
 .img-circle {
@@ -296,4 +296,13 @@ a i {
 /*CONTACT*/
 #contact {
   position: relative;
+}
+
+.contact {
+  min-height: 1000px;
+  width: 100%;
+  background-size: contain;
+  background-image: url('../images/contact.jpg');
+  background-repeat: no-repeat;
+  background-position: fixed;
 }
