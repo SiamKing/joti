@@ -62,7 +62,7 @@ $(function() {
         $('html, body').stop().animate({
             'scrollTop': $target.offset().top - 80
         }, 800, 'swing', function () {
-            // window.location.hash = target;
+            window.location.hash = target - 200;
             $(document).on("scroll", onScroll);
         });
     });
@@ -75,7 +75,7 @@ function onScroll(event){
     $('.navbar-nav a').each(function (e) {
         var currLink = $(this);
         var refElement = $(currLink.attr("href"));
-        if (refElement.position().top <= scrollPos && refElement.position().top + refElement.height() +100 >= scrollPos) {
+        if (refElement.position().top - 200 <= scrollPos && refElement.position().top + refElement.height() + 200 >= scrollPos) {
             $('.navbar-nav a').removeClass('active');
             currLink.addClass("active");
         }
