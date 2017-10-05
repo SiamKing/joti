@@ -54,6 +54,10 @@ h1 {
   font-size: 18px;
 }
 
+.active {
+  color: #FC635D !important;
+}
+
 .joti-brand {
   width: 40%;
   height: 40%;
@@ -102,6 +106,44 @@ a i {
 
 .what-section {
   margin: 30px 20px;
+}
+
+.custom-icon {
+  /*background: rgba(0, 0, 0, 0.4);*/
+  border-radius: 100%;
+  border: 6px solid #fff;
+  box-shadow: 0 1px 10px rgba(0, 0, 0, 0.46);
+  color: #fff;
+  display: table-cell;
+  font-size: 45px;
+  height: 60px;
+  padding: 30px;
+  text-align: center;
+  transition: .5s;
+  vertical-align: middle;
+  width: 60px;
+}
+
+.leaf {
+  background: #009933;
+}
+
+.cog {
+  background: #FF6E4A;
+}
+
+.check {
+  background: #3080C6;
+}
+
+.custom-icon:hover {
+  background: rgba(0, 0, 0, 0.6);
+}
+.fix-editor {
+  display: none;
+}
+.icon-wrapper {
+  display: inline-block;
 }
 
 .pride-section {
@@ -234,6 +276,15 @@ a i {
 .team img {
   float:left;
   margin: 40px 40px 40px 80px;
+}
+
+@media only screen and (max-width: 850px) {
+    .team img {
+        float: none;
+        margin: 0 auto;
+        display: block;
+        text-align: center;
+    }
 }
 
 .team-text {
