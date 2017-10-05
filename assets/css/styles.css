@@ -126,13 +126,14 @@ a i {
 
 .leaf {
   background: #009933;
+  margin-left: 10px;
 }
 
 .cog {
   background: #FF6E4A;
 }
 
-.check {
+.users {
   background: #3080C6;
 }
 
@@ -143,11 +144,28 @@ a i {
   display: none;
 }
 .icon-wrapper {
-  display: inline-block;
+  display: block;
+  float:left;
+  text
 }
 
 .pride-section {
   margin-top: 60px;
+}
+
+.what-we-do-text {
+  margin-left: 130px;
+}
+
+@media only screen and (max-width: 770px) {
+    .icon-wrapper {
+      float: none;
+    }
+    .icon-wrapper i {
+      margin: 0 auto 20px;
+      /*float: none;*/
+      display: block;
+    }
 }
 
 /*   CLIENTS   */
