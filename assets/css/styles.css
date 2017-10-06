@@ -176,6 +176,15 @@ h1 {
   position: relative;
 }
 
+@media only screen and (min-width: 2000px) {
+  #our-work, #what-we-do, .team {
+    max-width: 80%;
+  }
+  .team h1, .contact h1 {
+    margin-left: 240px;
+  }
+}
+
 .img-fluid {
   margin: 10px 0 20px 0;
 }
