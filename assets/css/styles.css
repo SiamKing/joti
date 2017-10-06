@@ -7,7 +7,7 @@ html, body {
 }
 
 h1 {
-  margin: 20px 0 0 40px;
+  margin: 40px 0 50px 40px;
   font-weight: 300;
   text-align: left !important;
   font-size: 3em;
@@ -75,6 +75,7 @@ h1 {
 
 .joti-hero-text {
   text-align: center;
+  margin-bottom: 60px;
 }
 
 .joti-hero-text img {
@@ -316,6 +317,9 @@ h1 {
 /*CONTACT*/
 #contact-us {
   position: relative;
+}
+#contact-us h1 {
+  margin-top: 0 !important;
 }
 
 .contact {
