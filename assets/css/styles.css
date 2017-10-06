@@ -92,9 +92,15 @@ h1 {
   letter-spacing: 3px;
 }*/
 
-a i {
+.chevron a i {
   background-color: transparent !important;
   color: rgb(172, 248, 255);
+}
+
+@media only screen and (max-width: 578px) {
+  .chevron{
+    margin-top: -40px;
+  }
 }
 
 /*   WHAT WE DO   */
@@ -299,12 +305,12 @@ a i {
 }
 
 @media only screen and (max-width: 850px) {
-    .team img {
-        float: none;
-        margin: 0 auto;
-        display: block;
-        text-align: center;
-    }
+  .team img {
+      float: none;
+      margin: 0 auto;
+      display: block;
+      text-align: center;
+  }
 }
 
 .team-text {
@@ -314,15 +320,20 @@ a i {
 }
 
 /*CONTACT*/
-#contact {
+#contact-us {
   position: relative;
 }
 
 .contact {
-  min-height: 1000px;
   width: 100%;
-  background-size: contain;
-  background-image: url('../images/contact.jpg');
-  background-repeat: no-repeat;
-  background-position: fixed;
+  height: 800px;
+  background: url('../images/clouds-and-sun-1920w.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+}
+
+.center {
+  text-align: center;
 }
