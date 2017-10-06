@@ -172,12 +172,12 @@ h1 {
   }
 }
 /*   CLIENTS   */
-#clients {
+#our-work {
   position: relative;
 }
 
 .img-fluid {
-  margin: 20px 0 20px 0;
+  margin: 10px 0 20px 0;
 }
 
 .hovereffect {
@@ -320,6 +320,7 @@ h1 {
 }
 #contact-us h1 {
   margin-top: 0 !important;
+  padding-top: 40px;
 }
 
 .contact {
