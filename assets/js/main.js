@@ -62,7 +62,7 @@ $(function() {
         $('html, body').stop().animate({
             'scrollTop': $target.offset().top - 80
         }, 800, 'swing', function () {
-            window.location.hash = target - 200;
+            // window.location.hash = target;
             $(document).on("scroll", onScroll);
         });
     });
