@@ -162,13 +162,11 @@ h1 {
   .pride-section h4 {
     font-size: 75%;
   }
-}
-
-@media only screen and (max-width: 770px) {
   .joti-hero-text {
     margin-bottom: 20px;
   }
 }
+
 @media only screen and (max-width: 500px) {
   .pride-section h4 {
     font-size: 60%;
