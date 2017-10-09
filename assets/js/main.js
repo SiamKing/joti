@@ -15,16 +15,15 @@ $(function() {
       scroll_start = $(this).scrollTop();
       // Check to see if position of current scroll is greater than the position of #what-we-do
       if(scroll_start > offset.top) {
-        $(".navbar-default").css({'background-color': '#fff', 'opacity': '1'});
-        $(".navbar-default").addClass('nav-after-scroll');
+        $(".navbar-default").css({'background-color': '#fff', 'opacity': '1'}).addClass('nav-after-scroll');
         $(".nav-link").css('color', 'black');
         $(".navbar-brand").css('color', 'rgb(172, 248, 255)');
+        $("i.fa-bars").removeClass('fa-inverse');
       } else {
-        $('.navbar-default').css({'background-color': 'transparent'});
-        $(".navbar-default").removeClass('nav-after-scroll');
+        $('.navbar-default').css({'background-color': 'transparent'}).removeClass('nav-after-scroll');
         $(".nav-link").css({'color': 'rgb(172, 248, 255)', 'background-color': 'transparent'});
         $(".navbar-brand").css('color', 'white');
-
+        $("i.fa-bars").addClass('fa-inverse');
       }
     });
   }
