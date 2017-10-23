@@ -380,6 +380,15 @@ h1 {
   text-align: center;
 }
 
+p img {
+  width: 100px;
+  height: auto;
+}
+
+.attribute {
+  font-size: 8px;
+}
+
 /*  FOOTER  */
 
 footer {
