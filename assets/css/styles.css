@@ -374,6 +374,12 @@ h1 {
   color: #1694B8;
   padding-left: 20px;
   margin-top: -20px;
+  text-decoration: none;
+  transition: .5s;
+}
+
+.contact-box span a:hover {
+  color: white;
 }
 
 .center {
