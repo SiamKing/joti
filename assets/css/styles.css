@@ -395,6 +395,10 @@ p img {
   font-size: 8px;
 }
 
+.fa.fa-phone {
+  padding-left: 8px;
+}
+
 /*  FOOTER  */
 
 footer {
